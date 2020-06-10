@@ -1,0 +1,46 @@
+<navigation xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:id = "@+id/android_navigation"
+    app:startDestination = "@+id/home">
+
+    <fragment
+        android:id = "@+id/home"
+        android:name = "com.example.smth.fragments.HomeFragment"
+        tools:layout = "@layout/home_fragment">
+
+
+        <action
+            android:id="@+id/action_home_to_single_item"
+            app:destination="@id/single_item" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/single_item"
+        android:name="com.example.smth.fragments.SingleItemFragment"
+        tools:layout="@layout/single_item">
+        <argument
+            android:name="movie"
+            app:argType="com.example.smth.fragments.Result">
+        </argument>
+
+    </fragment>
+
+
+    <fragment
+        android:id = "@+id/explore"
+        android:name = "com.example.smth.fragments.FirstPageFragment"
+        tools:layout = "@layout/first_page_fragment"
+        >
+
+
+    </fragment>
+
+    <fragment
+        android:id = "@+id/more"
+        android:name = "com.example.smth.fragments.LastPageFragment"
+        tools:layout = "@layout/lastpage_fragment">
+
+
+    </fragment>
+</navigation>
