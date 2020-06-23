@@ -1,5 +1,7 @@
 package com.example.smth.room
 
+
+
 import androidx.room.*
 import com.example.smth.fragments.Result
 
@@ -15,6 +17,8 @@ interface MovieDao {
     @Delete
     fun deleteMovie (movie: Result)
 
-    @Query("Select * from movies_table")
+    @Query("Select * from MOVIEDATA")
     fun getMovies () :List<Result>
 }
+
+

@@ -55,12 +55,12 @@
 
             <ImageView
                 android:id="@+id/iv_favourite"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_centerHorizontal="true"
                 android:contentDescription="@string/movie_image"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_favourite"
+                android:src="@drawable/ic_favourite_unfilled"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

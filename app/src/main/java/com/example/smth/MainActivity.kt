@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView
@@ -21,7 +22,12 @@ class MainActivity : AppCompatActivity() {
     }
     private fun setupNavigation() {
         val navController = Navigation.findNavController(this, R.id.my_nav_host_fragment)
-        NavigationUI.setupActionBarWithNavController(this, navController)
+        val appBarConfiguration = AppBarConfiguration
+            .Builder(
+                R.id.android_navigation
+               )
+            .build()
+        NavigationUI.setupActionBarWithNavController(this, navController,appBarConfiguration)
         NavigationUI.setupWithNavController(bottom_nav_view, navController)
     }
 }

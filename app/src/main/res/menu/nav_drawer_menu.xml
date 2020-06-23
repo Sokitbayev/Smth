@@ -4,7 +4,7 @@
     >
     <item android:id="@+id/home"
         android:title="Movie"
-        app:showAsAction="always"
+        app:showAsAction="ifRoom"
         android:orderInCategory="1"
         android:icon="@drawable/ic_movie"/>
 

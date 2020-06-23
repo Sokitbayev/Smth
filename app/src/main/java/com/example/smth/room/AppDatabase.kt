@@ -1,4 +1,5 @@
 package com.example.smth.room
+/*
 
 import android.content.Context
 import android.renderscript.Element
@@ -34,4 +35,4 @@ public abstract class AppDatabase : RoomDatabase(){
 
     }
 
-}
+}*/

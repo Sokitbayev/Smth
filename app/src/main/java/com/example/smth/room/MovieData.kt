@@ -1,23 +1,16 @@
-
-package com.example.smth.fragments
+package com.example.smth.room
 
 import android.os.Parcelable
-import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import kotlinx.android.parcel.Parcelize
 
-data class PopularMovies(
-    val results: List<Result>
-)
-@Parcelize
-data class Result(
-    val id: Int,
+@Entity
+data class MovieData(
+    @PrimaryKey (autoGenerate = true)val id: Int,
     val overview: String,
     val poster_path: String,
     val release_date: String,
     val title: String,
     val vote_average: Double,
     val vote_count: Int
-): Parcelable
-
+)
